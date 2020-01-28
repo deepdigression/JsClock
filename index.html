@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <title>JS Clock</title>
+</head>
+<body onload='updateDateTime()'>
+    
+    <div id="clockDiv">
+        <span id="clock">loading....</span> 
+        <span id="am_pm">loading....</span> 
+        <br>
+        <span id="date">loading....</span> <br>
+        <button id="btnStart" onclick="">Start Clock</button>
+        <button id="btnEnd">End Clock</button>
+        <button id="btnReset">Restart Clock</button>
+        <button id="btnClean">Clean Clock</button><br>
+        <span id="stopWatch">loading....</span> 
+    </div>
+
+    <script src="./clock.js"></script>
+</body>
+</html>

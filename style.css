@@ -1,0 +1,47 @@
+body{
+    background-color: black;
+}
+
+div#clockDiv{
+    line-height: 100px;
+    text-align: center;
+    color: #DF0029;
+    font-family: 'Orbitron', sans-serif;
+  
+}
+
+span{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+span#clock{
+    font-size: 80px;
+}
+span#am_pm{
+    font-size: 20px;
+}
+span#date{
+    font-size: 40px;
+}
+span#stopWatch{
+    font-size: 60px;
+}
+
+button{
+    color: #DF0029;
+    background-color: black;
+    border: 2px solid #DF0029 ;
+    height:40px;
+    width:100px;
+}
+
+button:hover{
+    color: black;
+    background-color: #DF0029;
+    border: 2px solid #DF0029 ;
+    height:42px;
+    width:104px;
+}
+
