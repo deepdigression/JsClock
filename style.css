@@ -1,13 +1,27 @@
 body{
-    background-color: black;
+    background-color: #0B0C10;
+    background-image: linear-gradient(#0B0C10, #202833) ;
+    background-repeat: no-repeat;
 }
-
-div#clockDiv{
+ div#clockDiv>fieldset{
     line-height: 100px;
     text-align: center;
-    color: #DF0029;
+    color: #67FAF2;
     font-family: 'Orbitron', sans-serif;
-  
+    margin: 100px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #67FAF2, 0 0 5px #67FAF2;
+    border: none;
+}
+
+
+div#stopWatchDiv>fieldset{
+    line-height: 100px;
+    text-align: center;
+    color: #67FAF2;
+    font-family: 'Orbitron', sans-serif;
+    margin: 100px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #67FAF2, 0 0 5px #67FAF2;
+    border: none;
 }
 
 span{
@@ -30,18 +44,37 @@ span#stopWatch{
 }
 
 button{
-    color: #DF0029;
-    background-color: black;
-    border: 2px solid #DF0029 ;
+    color: #67FAF2;
+    background-color: #202833;
+    border: 2px solid #67FAF2 ;
     height:40px;
-    width:100px;
+    width:100px;  
+    text-shadow: 1px 1px 2px black, 0 0 25px #67FAF2, 0 0 5px #67FAF2;
 }
 
 button:hover{
-    color: black;
-    background-color: #DF0029;
-    border: 2px solid #DF0029 ;
+    color: white;
+    background-color: #67FAF2;
+    border: 2px solid black ;
     height:42px;
     width:104px;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	top:40px;
+	left:40px;
+	background-color:none;
+	color:#67FAF2;
+	border-radius:50px;
+	text-align:center;
+	border: 2px solid #67FAF2 ;
+}
+
+.my-float{
+	margin-top:22px;
 }
 

@@ -14,7 +14,6 @@ function currentDateTime(){
     var secondsString = "";
     var am_pm = "AM"
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
-    
     if(day<10){
         dayString = "0"+ day.toString()
     }else{
@@ -71,6 +70,15 @@ function currentDateTime(){
 
 function updateDateTime(){
     setInterval(currentDateTime, 1000)
+    setInterval(stopWatch, 100)
 }
 
+function stopWatch(){
+    var startTime = "00:00:00";
+    var myStopWatch = document.getElementById('stopWatch');
+    myStopWatch.innerHTML = startTime;
+}
 
+function updateStopWatch(){
+    setInterval(stopWatch, 100)
+}

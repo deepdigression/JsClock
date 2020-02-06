@@ -8,18 +8,25 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <title>JS Clock</title>
 </head>
-<body onload='updateDateTime()'>
-    
+<body  onload='updateDateTime()'>
     <div id="clockDiv">
-        <span id="clock">loading....</span> 
-        <span id="am_pm">loading....</span> 
-        <br>
-        <span id="date">loading....</span> <br>
-        <button id="btnStart" onclick="">Start Clock</button>
-        <button id="btnEnd">End Clock</button>
-        <button id="btnReset">Restart Clock</button>
-        <button id="btnClean">Clean Clock</button><br>
-        <span id="stopWatch">loading....</span> 
+        <fieldset>
+            <legend> DATE TIME </legend>
+            <span id="clock">loading....</span> 
+            <span id="am_pm">loading....</span> 
+            <br>
+            <span id="date">loading....</span> <br>
+          </fieldset>
+    </div>
+    <div id="stopWatchDiv">
+        <fieldset>
+            <legend> STOP WATCH </legend>
+            <button id="btnStart" onclick="stopWatch()">Start Clock</button>
+            <button id="btnEnd">End Clock</button>
+            <button id="btnReset">Restart Clock</button>
+            <button id="btnClean">Clean Clock</button><br>
+            <span id="stopWatch">loading....</span> 
+        </fieldset>
     </div>
 
     <script src="./clock.js"></script>
